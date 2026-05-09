@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Typing Speed Test</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="top-bar">
+
+      <h1>⌨ Typing Speed Test</h1>
+
+      <button id="themeBtn">
+        🌙 Theme
+      </button>
+
+    </div>
+
+    <div class="controls">
+
+      <select id="difficulty">
+
+        <option value="easy">
+          Easy
+        </option>
+
+        <option value="medium">
+          Medium
+        </option>
+
+        <option value="hard">
+          Hard
+        </option>
+
+      </select>
+
+      <select id="timeSelect">
+
+        <option value="30">
+          30 Seconds
+        </option>
+
+        <option value="60">
+          60 Seconds
+        </option>
+
+        <option value="120">
+          120 Seconds
+        </option>
+
+      </select>
+
+    </div>
+
+    <div class="progress-container">
+
+      <div
+        class="progress-bar"
+        id="progressBar"
+      ></div>
+
+    </div>
+
+    <div id="warning"></div>
+
+    <audio id="alertSound">
+
+      <source
+        src="alert.mp3"
+        type="audio/mpeg"
+      >
+
+    </audio>
+
+    <div
+      class="quote"
+      id="quote"
+    >Quote comes when u click start button..</div>
+
+    <textarea
+      id="input"
+      placeholder="Start typing here..."
+      disabled
+    ></textarea>
+
+    <div class="keyboard">
+
+  <div class="key">Q</div>
+  <div class="key">W</div>
+  <div class="key">E</div>
+  <div class="key">R</div>
+  <div class="key">T</div>
+  <div class="key">Y</div>
+  <div class="key">U</div>
+  <div class="key">I</div>
+  <div class="key">O</div>
+  <div class="key">P</div>
+
+  <div class="key">A</div>
+  <div class="key">S</div>
+  <div class="key">D</div>
+  <div class="key">F</div>
+  <div class="key">G</div>
+  <div class="key">H</div>
+  <div class="key">J</div>
+  <div class="key">K</div>
+  <div class="key">L</div>
+
+  <div class="key">Z</div>
+  <div class="key">X</div>
+  <div class="key">C</div>
+  <div class="key">V</div>
+  <div class="key">B</div>
+  <div class="key">N</div>
+  <div class="key">M</div>
+
+  <div class="key space">
+    Space
+  </div>
+
+  <div class="key enter">
+    ⏎ Enter
+  </div><br>
+
+</div><br><br>
+
+    <div class="buttons">
+
+      <button
+        class="start-btn"
+        onclick="startTest()"
+      >
+        Start
+      </button>
+
+      <button
+        class="stop-btn"
+        onclick="stopTest()"
+      >
+        Stop
+      </button>
+
+    </div>
+
+    <div class="results">
+
+      <div class="card">
+        <h2>Time</h2>
+        <p id="time">0</p>
+      </div>
+
+      <div class="card">
+        <h2>WPM</h2>
+        <p id="wpm">0</p>
+      </div>
+
+      <div class="card">
+        <h2>Accuracy</h2>
+        <p id="accuracy">0%</p>
+      </div>
+
+      <div class="card">
+        <h2>Words</h2>
+        <p id="words">0</p>
+      </div>
+
+      <div class="card">
+        <h2>Mistakes</h2>
+        <p id="mistakes">0</p>
+      </div>
+
+      <div class="card">
+        <h2>Sentences</h2>
+        <p id="sentences">0</p>
+      </div>
+
+      <div class="card">
+        <h2>High Score</h2>
+        <p id="highScore">0</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
